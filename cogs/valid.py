@@ -48,7 +48,7 @@ class Validation(Cog):
                 print(f"[Validator]: {ctx.author} - {sid} - Success")
                 await ctx.respond("驗證通過。", ephemeral=True)
                 valid_role = ctx.author.guild.get_role(VALID_ROLE)
-                await ctx.author.add_roles(valid_role, reason=f"驗證通過，學號: {sid}")
+                await ctx.author.add_roles(valid_role, reason=f"{ctx.author.display_name}驗證通過，學號: {sid}")
             else:
                 print(f"[Validator]: {ctx.author} - {sid} - Failed")
                 await ctx.respond("驗證未通過，請於15秒後重新嘗試，或洽管理員進行人工驗證。", ephemeral=True)
