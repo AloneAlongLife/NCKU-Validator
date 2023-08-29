@@ -1,0 +1,7 @@
+{
+    "Validation": {
+        "name": "valid",
+        "path": "cogs.valid",
+        "load": true
+    }
+}
