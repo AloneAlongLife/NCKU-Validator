@@ -1,6 +1,6 @@
 from discord import ApplicationContext, Bot, ExtensionNotFound, ExtensionAlreadyLoaded, ExtensionNotLoaded, ExtensionFailed, Permissions, SlashCommandGroup
 from discord.ext.commands import Cog
-from orjson import loads
+from json import loads
 
 from typing import Union
 
